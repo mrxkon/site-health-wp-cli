@@ -73,8 +73,6 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 
 			$tests = $wp_site_health::get_tests();
 
-			unset( $tests['direct']['rest_availability'] );
-
 			$results = array();
 
 			$site_status = array(
